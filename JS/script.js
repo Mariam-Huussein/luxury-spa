@@ -1,7 +1,7 @@
 window.addEventListener("load", () => {
     const loader = document.getElementById("loader");
     const content = document.getElementById("content");
-    setTimeout( ()=>{},2100);
+    setTimeout( ()=>{},1800);
 
     loader.classList.add("fade");
     setTimeout(()=> {loader.style.display="none"},400);
