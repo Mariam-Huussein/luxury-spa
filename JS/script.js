@@ -1,7 +1,7 @@
 window.addEventListener("load", () => {
     const loader = document.getElementById("loader");
     const content = document.getElementById("content");
-    setTimeout( ()=>{},1800);
+    setTimeout( ()=>{},1000);
 
     loader.classList.add("fade");
     setTimeout(()=> {loader.style.display="none"},400);
@@ -62,7 +62,7 @@ element.forEach(ele =>{
 });
 
 
-document.getElementById('booking-form').addEventListener('submit', function(e) {
+document.getElementById('booking-form').addEventListener('submit', function(e){
     e.preventDefault();
 
     let name = document.getElementById('name');
@@ -75,14 +75,15 @@ document.getElementById('booking-form').addEventListener('submit', function(e) {
     document.querySelectorAll('input').forEach(element => {
         element.value='';
     });
-    document.querySelector('select').value=''
-    
-    document.getElementById('custom-alert-close').addEventListener('click', function() {
-        document.getElementById('custom-alert-overlay').style.display = 'none';
-    });
+    document.querySelector('select').value='';
 });
 
 
+function closeAlert(){
+    document.getElementById('custom-alert-close').addEventListener('click', function() {
+        document.getElementById('custom-alert-overlay').style.display = 'none';
+    });
+}
 
 let menu = document.querySelector(".nav-list");
 let openBtn = document.getElementById("open-menu-btn");
