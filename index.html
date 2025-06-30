@@ -162,8 +162,14 @@
                     <label for ="service" id="label-serv">Service</label>
                     </div>
                 <div class="continer-input date-time-continer">
-                    <input type="date" name="date" id="date" required class="date-time-input">
-                    <input type="time" name="time" id="time" required class="date-time-input">
+                    <div style="position: relative; width: 48%;">
+                        <label for="date">Select Date</label>
+                        <input type="date" name="date" id="date" required class="date-time-input" style="width: 88%;">
+                    </div>
+                    <div style="position: relative; width: 48%;">                        
+                        <label for="time" class="lbl-time">Select Time</label>
+                        <input type="time" name="time" id="time" required class="date-time-input" style="width: 88%;">
+                    </div>
                 </div>
                 <div class="continer-btn">
                     <button type="submit" class=" Button btn-submit">SUBMIT</button>

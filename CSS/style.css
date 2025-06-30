@@ -672,6 +672,10 @@ book section
     width: 50%;
 }
 
+.lbl-time{
+    left: 55%;
+}
+
 .continer-btn{
     width: 316px;
     text-align: center;
