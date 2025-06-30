@@ -1,0 +1,530 @@
+@media (width >= 1200px) { 
+    #open-menu-btn,
+    #close-menu-btn {
+        display: none;
+    }
+    header{
+        height: 100vh;
+    }
+}
+
+@media (width <= 1200px) { 
+    #open-menu-btn,
+    #close-menu-btn {
+        display: none;
+    }
+    .right-about p {
+        font-size: 15px;
+        margin-bottom: 12px;
+        line-height: 25px;
+        word-spacing: 4px;
+    }
+
+    .img-about{
+        height: 570px;
+    }
+
+    .star-vect {
+        width: 230px;
+        right: 205px;
+    }
+
+    .service-cards-container {
+        width: 926px;
+    }
+
+    .services-card {
+        flex: 0 0 270px;
+    }
+}
+
+@media (width<=1024px)
+{
+    .continer-grade {
+        gap: 20px;
+    }
+
+    .right-about {
+        width: 75%;
+    }
+    
+    .main-txt-serv h2{
+        font-size: 40px;
+    }
+    
+    .service-cards-container {
+        width: 596px;
+    }
+    
+    .services-card {
+        flex: 0 0 260px;
+    }
+    
+    #serv-prev-btn {
+        right: -10%;
+    }
+    
+    #serv-next-btn {
+        left: -10%;
+    }
+
+    .continer-grade-four {
+        width: 94%;
+        grid-template-rows: auto;
+        grid-template-columns: auto auto;
+        gap: 20px;
+        justify-items: start;
+        align-content: center;
+        align-items: baseline;
+    }
+
+}
+
+@media (width <=950px) {
+    .continer-grade {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .packages-cards-container{
+        width: 790px;
+    }
+    
+    .package-card{
+        flex: 0 0 259px;
+    }
+
+}
+
+@media (width <=827px) {
+    nav .nav-list li {
+        display: block;
+        margin: 20px 0;
+    }
+
+    nav .nav-list {
+        position: fixed;
+        height: 100vh;
+        width: 30%;
+        top: 0;
+        right: -2%;
+        padding: 60px 20px;
+        filter: drop-shadow(2px 4px 6px black);
+        background-color: #26110D;
+        z-index: 100;
+        transform: translateX(100%);
+        transition: transform 0.8s ease-in-out;
+    }
+    
+    nav .nav-list.active {
+        transform: translateX(0); 
+    }
+
+    #open-menu-btn{
+        display: inline-block;
+    }
+
+    #open-menu-btn,
+    #close-menu-btn {
+    transition: all 0.5s ease;
+    }
+
+    .slide-out {
+        transform: translateX(40px);
+        opacity: 0;
+        transition: all 0.5s ease;
+    }
+
+    .slide-in {
+        transform: translateX(0);
+        opacity: 1;
+        transition: all 0.5s ease;
+    }
+
+    .rotate {
+        animation: rotateIcon 0.5s ease-in-out;
+    }
+
+    @keyframes rotateIcon {
+        0% { transform: rotate(0deg); }
+        50% { transform: rotate(90deg); }
+        100% { transform: rotate(0deg); }
+    }
+
+    .continer-book {
+        width: 77%;
+        height: 70%;
+    }
+}
+
+@media (width <=770px) {
+    .right-about {
+        width: 68%;
+    }
+
+    header h1 {
+        font-size: 70px;
+    }
+    
+    header h2 {
+        font-size: 48px;
+    }
+    
+    .header-text p {
+        font-size: 16px;
+        line-height: 38px;
+        letter-spacing: 0px;
+    }
+
+    .continer-grade-four {
+        width: 96%;
+        gap: 16px;
+    }
+}
+
+@media (width<=750px)
+{
+    .main-txt-serv h2{
+        font-size: 38px;
+        letter-spacing: 4.5px;
+        padding: 0 10px;
+    }    
+    .packages-cards-container{
+        width: 402px;
+    }
+    #packg-next-btn {
+        left: -2%;
+    }
+}
+
+@media (width<=735px){
+    .service-cards-container {
+        width: 556px;
+    }
+    
+    .services-card {
+        flex: 0 0 240px;
+    }
+}
+
+@media (width<=665px){
+    .service-cards-container {
+        width: 304px;
+    }
+    
+    .services-card {
+        flex: 0 0 260px;
+    }
+
+    #serv-next-btn {
+        left: -12%;
+    }
+}
+
+@media (width<=635px){
+    .main-txt-book h2{
+        font-size: 36px;
+    }
+    
+    .continer-input label{
+        font-size: 15px;
+    }
+
+    .continer-input input, 
+    .continer-input button{
+        width: 260px;
+        font-size: 15px;
+    }
+    .continer-input select{
+        width: 285px;
+        font-size: 15px;
+    }
+    .date-time-continer {
+        width: 285px;
+    }
+    #date-time-input{
+        width: 120px;
+    }
+
+    .btn-submit{
+        width: 90%;
+    }
+
+    .continer-book {
+        width: 67%;
+        height: 68%;
+    }
+}
+
+@media (width<= 598px){
+    #logo {
+        font-size: 28px;
+    }
+    
+    #open-menu-btn i ,
+    #close-menu-btn i {
+        font-size: 24px;
+    }
+
+    nav .nav-list{
+        width: 50%;
+    }
+    .continer-header {
+        backdrop-filter: brightness(0.5);
+    }
+    
+    header .header-text {
+        height: 43%;
+        padding-top: 42%;
+        width: 70%;
+        margin: auto;
+        justify-content: unset;
+    }
+
+    header h2 {
+        font-size: 30px;
+    }
+    
+    .header-text p {
+        line-height: 38px;
+    }
+    
+    .header-btn-book {
+        font-size: 26px;
+    }
+    
+    .right-about {
+        width: 88%;
+    }
+
+}
+
+@media (width<=547px){
+    header .header-text {
+        height: fit-content;
+    }
+    .img-about {
+        height: 420px;
+    }
+    
+    .star-vect {
+        width: 180px;
+        right: 147px;
+        transform: rotate(-11deg);
+    }
+
+    .star-invert-vect {
+        width: 180px;
+        bottom: -53px;
+        right: -59px;
+    }
+
+    .continer-grade-four {
+        width: 88%;
+        grid-template-rows: auto;
+        grid-template-columns: auto;
+        gap: 20px;
+    }
+
+    .continer-book {
+        width: 80%;
+        height: 70%;
+    }
+
+    .continer-input input{
+        width: 260px;
+    }
+
+    .booked-treatment select {
+        width: 280px;
+    }
+
+    .date-time-continer {
+        justify-content: center;
+    }
+
+    .date-time-continer .date-time-input{
+        width: 120px;
+    }
+
+}
+
+@media (width<= 425px){
+    header .header-text {
+        height: fit-content;
+    }
+
+    .continer-book {
+        width: 90%;
+        height: 69%;
+    }
+
+    .continer-grade {
+        padding: 23.2% 5.4%;
+    }
+
+    .img-about {
+        height: 354px;
+    }
+
+    .star-vect {
+        width: 152px;
+        right: 122px;
+    }
+
+}
+
+@media (width<=375px){
+    nav .nav-list{
+        width: 75%;
+    }
+
+    .package-track {
+        width: 300px;
+        margin-right: 34px;
+        padding: 20px 0;
+    }
+
+    .package-card {
+        flex: 0 0 250px;
+        justify-content: space-evenly;
+    }
+
+    .services-card-price p{
+        margin-bottom: 0;
+    }
+
+    .services-card-title p,.services-card-name h3{
+        padding: 0 20px;
+    }
+
+    #serv-prev-btn i, #serv-next-btn i, #packg-prev-btn i, #packg-next-btn i {
+        font-size: 28px;
+    }
+
+    #packg-prev-btn {
+        right: 14%;
+    }
+
+    .main-txt-book h2 {
+        font-size: 32px;
+    }
+
+    .continer-book {
+        width: 92%;
+        height: 77%;
+    }
+
+    .continer-input input, 
+    .continer-input button, 
+    .continer-input select{
+        width: 200px;
+        height: 34px;
+        font-size: 14px;
+    }
+    
+    .continer-input label{
+        font-size: 14px;
+    }
+
+    .booked-treatment select {
+        width: 220px;
+        height: 49px;
+    }
+
+    .date-time-continer{
+        display: flex;
+        width: 230px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .date-time-continer .date-time-input{
+        width: 206px;
+    }
+
+}
+
+@media (width<=327px){
+    header .header-text {
+        height: fit-content;    
+    }
+    header h1 {
+        font-size: 60px;
+    }
+    header h2 {
+        font-size: 28px;
+    }
+    .header-text p {
+        line-height: 36px;
+        font-size: 15px;
+    }
+    .header-btn-book {
+        font-size: 20px;
+    }
+
+    .services-btn-book{
+        font-size: 16px;
+    }
+
+    .main-txt-serv{
+        padding: 78px 0 10px;
+    }
+
+    .main-txt-serv h2{
+        font-size: 34px;
+    }
+
+    #packages{
+        padding: 50px 0 0;
+    }
+
+    .packages-cards-container, .service-cards-container {
+        padding: 0 0 60px;
+    }
+
+    .package-track {
+        width: 337px;
+    }
+
+    #serv-next-btn {
+        left: 18%;
+    }
+
+    #serv-prev-btn {
+        right: 20%;
+    }
+    
+    #packg-next-btn {
+        left: 8%;
+    }
+
+    #packg-prev-btn {
+        right: 38%;
+    }
+
+    #serv-prev-btn ,
+    #serv-next-btn,
+    #packg-prev-btn,
+    #packg-next-btn{
+        top: 90%;
+    }
+
+    #serv-prev-btn i, 
+    #serv-next-btn i, 
+    #packg-prev-btn i, 
+    #packg-next-btn i {
+        font-size: 34px;
+    }
+
+    #serv-prev-btn {
+        right: 20%;
+    }
+
+    .btn-submit{
+        font-size: 20px;
+        width: 50%;
+    }
+}

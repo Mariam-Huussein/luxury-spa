@@ -1,0 +1,772 @@
+html {
+    scroll-behavior: smooth;
+    min-height: 100vh;
+}
+
+body{
+    background-color: #26110D;
+}
+
+html,body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+* {
+    margin: 0;
+    font-size: 16px;
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    border: none;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+p {
+    font-size: 18px;
+    font-family: "Playfair Display", serif;
+    font-weight: 400;
+}
+
+.Button{
+    font-size: 28px;
+    height: fit-content;
+    width: fit-content;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #3A200B;
+    color: #FFFDF7;
+    cursor: pointer;
+    transform: scale(1);
+    transition: 0.5s ease-out;
+}
+
+.Button:hover,
+.Button:focus{
+    transform: scale(1.05);
+    background-color: #a1683b;
+}
+
+.btn-up{
+    display: none;
+    background-color: transparent;
+    position: fixed;
+    right: 8px;
+    bottom: 8px;
+    cursor: pointer;
+    z-index: 5;
+    transition: all 0.4s ease-in;
+}
+
+.btn-up i{
+    color: #7b5c41;
+    font-size: 38px;
+}
+
+/* Navbar */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: transparent;
+    transition: all 0.4s ease-in;
+    z-index: 5;
+}
+
+#open-menu-btn,
+#close-menu-btn{
+    display: none;
+    color: #EED3C3;
+    background-color: transparent;
+    cursor: pointer;
+    z-index: 101;
+    position: relative;
+}
+
+#open-menu-btn i,
+#close-menu-btn i{
+    font-size: 30px;
+}
+
+#logo{
+    font-size: 34px;
+}
+
+nav .nav-list {
+    list-style: none;
+}
+
+nav .nav-list li {
+    display: inline;
+    margin: 18px;
+}
+
+footer .continer-grade-four .section-one a,
+nav a {
+    position: relative;
+    font-family: "Playfair Display", serif;
+    font-weight: 100;
+    font-stretch: 100%;
+    transform: scale(1);
+    transition: all 0.5s ease;
+    color: #EED3C3;
+    text-align: center;
+    font-size: 20px;
+}
+
+nav .nav-items:hover {
+    font-weight: 900;
+    font-stretch: 115%;
+    transform: scale(1.05);
+}
+
+.nav-items::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    transform: translateX(-50%) scaleX(0);
+    transform-origin: center;
+    width: 100%;
+    height: 4px;
+    background-color: #edcebb;
+    transition: transform 0.4s ease-in-out;
+}
+
+.nav-items:hover::after {
+    transform: translateX(-50%) scaleX(1);
+}
+
+/*******
+        Header Styles
+*****/
+header {
+    background-image: url("../images/woman-in-massage-spa-salon.jpg");
+    max-height: 100vh;
+    min-height: fit-content;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    color: #EED3C3;
+}
+
+header a{
+    color: #EED3C3;
+}
+
+.continer-header {
+    height: 100%;
+    background-image: linear-gradient(to right, #33281B, transparent);
+    padding: 50px 0;
+}
+
+header .header-text {
+    height: 80%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 80px;
+}
+
+header h2 {
+    color: #D8AFA3;
+    text-align: center;
+    font-family: "Dancing Script", cursive;
+    font-size: 58px;
+}
+
+.header-text p {
+    color: #F7F3EC;
+    margin: 20px 20px 0;
+    text-align: center;
+    word-spacing: 4px;
+    line-height: 34px;
+    letter-spacing: 1px;
+    opacity: 0.8;
+}
+
+.header-book {
+    text-align: center;
+    padding: 32px;
+}
+
+.header-btn-book{
+    font-size: 30px;
+    color: #EED3C3;
+    background-color: rgb(41, 28 ,18 , 0.77);
+    padding: 18px;
+}
+
+/******
+        About styles
+*******/
+
+.section-about {
+    height: fit-content;
+    background-color: #F3e3C2;
+    color: #3a200b;
+}
+
+.continer-grade {
+    width: fit-content;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    padding: 100px 60px;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+}
+
+.right-about{
+    width: 65%;
+    word-spacing: 2px;
+    line-height: 24px;
+    word-wrap: break-word;
+}
+
+.right-about span{
+    font-family: "Dancing Script", cursive;
+}
+
+.about-title{
+    font-size: 45px;
+    font-family: "Playfair Display", serif;
+    margin: 10px 0 20px;
+}
+
+.right-about p {
+    margin-bottom: 20px;
+    line-height: 28px;
+    word-spacing: 5px;
+}
+
+.right-about h3{
+    font-size: 34px;
+    font-family: "Dancing Script", cursive;
+    word-spacing: 8px;
+    line-height: 30px;
+    text-transform: capitalize;
+    padding: 12px 0;
+    text-align: center;
+}
+
+.btn-abt{
+    font-size: 20px;
+    padding: 15px;
+    transition: 0.5s ease-out;
+}
+
+.btn-abt a{
+    font-size: 20px;
+}
+
+.slide-left {
+    transition: 0.5s ease-out;
+}
+
+.btn-abt:hover{
+    padding: 15px 18px;
+    transform: scale(1);
+}
+
+.btn-abt:hover .slide-left {
+    transform: translateX(50%);
+}
+
+.left-about{
+    position: relative;
+    margin: auto;
+}
+
+.img-about {
+    object-fit: cover;
+    object-position: center;
+    height: 654px;
+    border-top-right-radius: 320px;
+    border-top-left-radius: 320px;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    box-shadow: -8px 8px 20px 10px #fffbf5;
+}
+
+.star-vect {
+    position: absolute;
+    width: 252px;
+    top: -16px;
+    right: 244px;
+    transform: rotate(-4deg);
+}
+
+.star-invert-vect{
+    position: absolute;
+    width: 252px;
+    bottom: -76px;
+    right: -82px;
+    transform: rotate(90deg);
+}
+
+/*****
+book section
+******/
+.section-service{
+    background-color: #26110D;
+}
+
+.packages-cards-container,
+.service-cards-container {
+    width: 980px;
+    margin: auto;
+    padding: 60px 0;
+    position: relative;
+}
+
+.service-cards-container,
+.packages-cards-container{
+    display: grid;
+    gap: 20px;
+    justify-items: center;
+}
+
+.main-txt-serv{
+    padding: 78px 0 0;
+}
+
+.main-txt-packg{
+    padding: 16px 0 0;
+}
+
+.main-txt-serv h2{
+    padding: 0;
+    letter-spacing: 0.05em;
+}
+
+.packages-cards-track,
+.service-cards-track{
+    display: flex;
+    transition: transform 0.4s ease-in-out;
+    will-change: transform;
+}
+
+.service-cards-track{
+    padding: 20px 0;
+}
+
+.packages-cards-track {
+    width: 100%;
+    gap: 20px;
+    padding: 20px 18px;
+}
+
+.service-track{
+    width: 100%;
+    overflow: hidden;
+}
+
+.package-track {
+    width: 76%;
+    gap: 20px;
+    overflow: hidden;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 0 0 289px;
+    min-height: 470px;
+    max-height: 290px;
+    margin: 0 10px;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 1.5;
+    padding: 8px;
+    background-color: #492203;
+    background-color: #f5e4c3;
+    color: #2d140d;
+    transition: all 0.5s ease-in-out;
+} 
+
+.package-card{
+    flex: 0 0 328px;
+    margin: 0;
+    max-height: unset;
+}
+
+.services-card-name h3{
+    font-size: 24px;
+    margin: 12px 0 4px;
+    letter-spacing: 0.04em;
+}
+
+.services-card-title p{
+    font-size: 16px;
+    line-height: 1.4;
+    opacity: 0.78;
+    margin-bottom: 12px;
+}
+
+.services-card-price p{
+    font-family: 'Dancing Script';
+    font-size: 20px;
+    margin-bottom: 12px;
+    opacity: 0.78;
+}
+
+
+.services-card-image-continer {
+    width: 100%;
+    height: 320px;
+    border-radius: 12px;
+    margin-bottom: 2px;
+    overflow: hidden;
+}
+
+.services-card-image-continer img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 12px;
+}
+
+.section-service .continer-btn{
+    width: 100%;
+    margin: 16px 0;
+}
+
+.services-btn-book{
+    font-size: 20px;
+}
+
+.service-cards-main{
+    position: relative;
+}
+
+
+#serv-prev-btn ,
+#serv-next-btn,
+#packg-prev-btn,
+#packg-next-btn{
+    background-color: transparent;
+    position: absolute;
+    cursor: pointer;
+    z-index: 2;
+    transform: translateY(50%);
+    top: 50%;
+}
+
+#serv-prev-btn i,
+#serv-next-btn i,
+#packg-prev-btn i,
+#packg-next-btn i{
+    font-size: 36px;
+}
+
+#serv-prev-btn {
+    right: -4%;
+}
+
+#serv-next-btn{
+    left: -4%;
+}
+
+#packg-prev-btn{
+    right: 8%;
+    transform: translate(50%);
+}
+
+#packg-next-btn{
+    left: 4%;
+    transform: translate(50%);
+}
+
+
+
+#custom-alert-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(5px);
+    background: rgba(0, 0, 0, 0.288);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+#custom-alert {
+    display: flex;
+    background-color: #f3d6c2;
+    color: #3A200B;
+    padding: 40px 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.9);
+    text-align: center;
+    height: 240px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#custom-alert p,
+#custom-alert button{
+    font-family: "Dancing Script", cursive;
+    font-size: 26px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    margin-bottom: 12px;
+}
+
+#custom-alert button {
+    margin-top: 15px;
+    margin-bottom: 0;
+    padding: 10px 20px;
+    border: none;
+    background-color: #26110d;
+    color: #FFFDF7;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/*****
+book section
+******/
+
+.book-section{
+    position: relative;
+    height: 952px;
+    z-index: 0;
+}
+
+.vd-bg-book{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    filter: brightness(0.5);
+    object-fit: cover;
+    object-position: center;
+}
+
+.continer-book{
+    background-color: rgb(63 63 63 / 54%);
+    width: 560px;
+    height: 680px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0px 32px rgb(0, 0, 0, 0.7);
+    border-radius: 16px;
+    backdrop-filter: blur(4px);
+}
+
+.continer-book form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+}
+
+.main-txt-serv h2,
+.main-txt-contact h2,
+.main-txt-book h2{
+    color: #fff;
+    text-align: center;
+    padding: 40px 0 20px;
+    font-size: 46px;
+    text-transform: uppercase;
+    font-family: "Dancing Script", cursive;
+}
+
+.continer-input{
+    position: relative;
+}
+
+.continer-input input ,
+.continer-input button ,
+.continer-input select{
+    border: none;
+    border-radius: 8px;
+    margin: 18px 0;
+    padding: 8px;
+    width: 300px;
+    background-color: rgb(255, 255, 255,0.8);
+    color: rgb(0, 0, 0, 0.84);
+    opacity: 0.9;
+}
+
+
+.continer-input input{
+    height: 36px;
+}
+
+.continer-input input:focus-visible,
+.continer-input select:focus-visible{
+    outline: none;
+}
+
+.continer-input input:valid,
+.continer-input input:focus,
+.continer-input select:valid{
+    border: none;
+    outline: none;
+    box-shadow: 0 0 6px 2px rgba(93, 58, 0, 0.3); 
+    background-color: #fff;
+}
+
+.continer-input label{
+    position: absolute;
+    top: 34px;
+    left: 8px;
+    opacity: 0.6;
+}
+
+.booked-treatment select{
+    width: 320px;
+    height: 50px;
+}
+
+.continer-input input:valid~label,
+.continer-input input:focus~label,
+.continer-input select:valid~label,
+.continer-input select:focus~label{
+    top: -10px;
+    color: rgb(0, 0, 0,0.9);
+    background-color: #fff;
+}
+
+.date-time-continer{
+    display: flex;
+    width: 320px;
+    gap: 10px;
+}
+
+.date-time-input{
+    width: 50%;
+}
+
+.continer-btn{
+    width: 316px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.btn-submit{
+    font-size: 24px;
+    width: 100%;
+    height: 60px;
+    border: none;
+    border-radius: 8px;
+    background-color: #3A200B;
+    color: #FFFDF7;
+    cursor: pointer;
+    transform: scale(1);
+    transition: 0.5s ease-out;
+}
+
+.btn-submit:hover,
+.btn-submit:focus{
+    transform: scale(1.05);
+    background-color: #a1683b;
+}
+
+
+
+/*******
+        Footer
+********/
+footer {
+    padding: 40px 0;
+    background-color: #26110D;
+}
+
+.continer-grade-four {
+    height: 100%;
+    width: 94%;
+    color: #fcf4bb;
+    display: grid;
+    grid-template-columns: 19% 19% 25% 32%;
+    gap: 28px;
+    margin: 0 auto;
+    align-items: start;
+    justify-items: center;
+    align-content: center;
+}
+
+.main-txt-footer h3{
+    text-align: left;
+    font-size: 32px;
+    font-family: 'Dancing Script';
+    padding: 20px 10px;
+}
+
+.section-one{
+    padding: 10px;
+}
+
+.continer-grade-four p{
+    line-height: 2em;
+    font-style: oblique;
+    font-size: 16px;
+    margin-bottom: 14px;
+    opacity: 0.68;
+    color: #fcf4bb;
+}
+
+.section-two .links {
+    display: flex;
+    justify-content: center;
+}
+
+.section-two .links a i,
+.section-three .Contact p span i{
+    font-size: 20px;
+    margin-right: 12px;
+    opacity: 0.68;
+    color: #fcf4bb;
+}
+
+
+.section-three .Contact p a {
+    font-weight: 100;
+    opacity: 0.68;
+    color: #fcf4bb;
+}
+
+.section-four table{
+    margin-left: 12px;
+}
+
+.section-four table td{
+    padding-right: 20px;
+}
+
+.hide{
+    display: none !important;
+}

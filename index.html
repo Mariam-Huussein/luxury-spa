@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="rgba(123, 92, 65, 0.78)">
+    <title>Luxury Spa</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lora&family=Playfair+Display:wght@400;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/responsivestyle.css">
+    <link rel="icon" href="images\spa-solid.svg" type="image/svg+xml">
+</head>
+
+<body>
+    <button class="btn-up" >
+        <i class="fa-regular fa-circle-up"></i>
+    </button>
+
+    <nav class="navbar">
+        <a href="index.html"><span id="logo">Luxury Spa</span></a>
+    <button id="open-menu-btn">
+        <i class="fa-solid fa-bars"></i>
+    </button>
+
+    <button id="close-menu-btn" style="display: none;">
+        <i class="fa-solid fa-xmark"></i>
+    </button>
+
+        <ul class="nav-list">
+            <li> <a href="#header" class="nav-items" >Home</a></li>
+            <li> <a href="#about-us" class="nav-items" >About</a></li>
+            <li> <a href="#serv" class="nav-items" >Servies</a></li>
+            <li> <a href="#packages" class="nav-items" >Packages</a></li>
+            <li> <a href="#book-section" class="nav-items" >Book A Treatment</a></li>
+        </ul>
+    </nav>
+    <header id="header">
+        <div class="continer-header">
+            <div class="header-text">
+                <h1>Luxury Spa</h1>
+                <h2>Beauty & Spa</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati dolorum deleniti tempore, repellat tenetur voluptates minima voluptatem. Sit, mollitia doloribus?</p>
+            </div>
+            <div class="header-book">
+                <button class="Button header-btn-book" onclick="smoothScrollTo('#book-section')">Book Now! </button>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="section-about" id="about-us">
+        <div class="continer-grade" >
+            <div class="left-about">
+                <img src="images\star.png" class="star-vect">
+                <img src="images\smiling-beautiful-young-woman-sitting-bench-sauna_23-2147867892.jpg" class="img-about">
+                <img src="images\star-inverted.png" class="star-invert-vect">
+            </div>
+            <div class="right-about">
+                <span>Beauty & Spa</span>
+                <h2 class="about-title">ABOUT US</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias quos ipsum pariatur, quae ut deserunt magnam facilis dignissimos sunt est rem facere excepturi ratione enim praesentium dicta iusto officia hic!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod alias esse, sunt impedit repellat quasi sit nisi vel?</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates perferendis fugit cumque doloremque laudantium, atque, aliquam ex aperiam sed itaque hic. Temporibus corporis fuga debitis.</p>
+                <button class="Button btn-abt"><a href="#" > Learn More <i class="fa-solid fa-arrow-right slide-leftt"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-service" id="serv">
+        <div class="main-txt-serv">
+            <h2>
+                OUR SERVICES
+            </h2>
+        </div>
+        <div class="service-cards-main">
+            <div class="service-cards-container" >
+                <button id="serv-next-btn" ><i class="fa-solid fa-arrow-left" style="color: #ffffff;"></i></button>
+                <div class="service-track" >
+                    <div class="service-cards-track" >
+                    </div>
+                </div>
+                <button id="serv-prev-btn" ><i class="fa-solid fa-arrow-right" style="color: #ffffff;"></i></button>
+            </div>
+        </div>
+        
+        <div class="main-txt-serv" style="padding: 0;" id="packages">
+            <h2>
+                Don't miss out our packages!
+            </h2>
+        </div>
+        <div class="packages-cards-container">
+            <button id="packg-next-btn" ><i class="fa-solid fa-arrow-left" style="color: #ffffff;"></i></button>
+            <div class="package-track" >
+                <div class="packages-cards-track" >
+                </div>
+            </div>
+            <button id="packg-prev-btn" ><i class="fa-solid fa-arrow-right" style="color: #ffffff;"></i></button>
+        </div>
+
+        <script src="JS/create-cards.js"></script>
+        <script src="JS/card-swippeer.js"></script>
+
+    </div>
+
+
+
+        <div class="book-section" id="book-section">
+        <video muted autoplay loop playsinline class="vd-bg-book">
+            <source src="Video/Spa_Day.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="continer-book">
+            <div class="main-txt-book">
+                <h2>
+                    Book a Treatment
+                </h2>
+            </div>
+            <form id="booking-form">
+                <div class="continer-input">
+                    <input type="text" name="name" id="name" required>
+                    <label for="name">Name</label>
+                </div>
+                <div class="continer-input">
+                    <input type="tel" name="phone" id="phone" required>
+                    <label for="phone">Phone</label>
+                </div>
+    
+                <div class="continer-input">
+                    <input type="email" name="email" id="email" required>
+                    <label for="email">E-mail</label>
+                </div>
+    
+                <div class="continer-input booked-treatment">
+                    <select name="service" id="service" required onclick="setSelect(this.value)">
+                        <option value="" style="display: none;"></option>
+                        <optgroup label="Services">
+                            <option value="1">Body Massage</option>
+                            <option value="2">Body treatment</option>
+                            <option value="3">Facial treatments</option>
+                            <option value="4">Hot Stone</option>
+                            <option value="5">Sauna Room</option>
+                            <option value="6">Foot Massage</option>
+                        </optgroup>
+                        <optgroup label="packages">
+                            <option value="7">Special</option>
+                            <option value="8">Couple</option>
+                            <option value="9">Friends</option>
+                            <option value="10">Luxury Day</option>
+                        </optgroup>
+                    </select>
+                    <label for ="service" id="label-serv">Service</label>
+                    </div>
+                <div class="continer-input date-time-continer">
+                    <input type="date" name="date" id="date" required class="date-time-input">
+                    <input type="time" name="time" id="time" required class="date-time-input">
+                </div>
+                <div class="continer-btn">
+                    <button type="submit" class=" Button btn-submit">SUBMIT</button>
+                </div>
+                </form>
+        </div>
+    </div>
+
+        <footer>    
+        <div class="continer-grade-four">
+            <div class="section-one">
+                <div class="main-txt-footer">
+                    <h3 >About Us</h3>
+                </div>
+                <div>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi eligendi perferendis ab delectus maiores, quo fuga!
+                    </p>
+                </div>
+            </div> 
+            <div class="section-two">
+                <div class="main-txt-footer">
+                    <h3>Our Social Media</h3>
+                </div>
+                <p>stay connceted eith us on social media to stay updated on out latest news.</p>
+                <div class="links">
+                    <a href="#"><span><i class="fa-brands fa-facebook" ></i> </span></a>
+                    <a href="#"><span><i class="fa-brands fa-instagram" ></i> </span></a>
+                    <a href="#"><span><i class="fa-brands fa-tiktok" ></i> </span></a>
+                    <a href="#"><span><i class="fa-brands fa-whatsapp"></i> </span></a>
+                    <a href="#"><span><i class="fa-brands fa-youtube" ></i> </span></a>
+                    <a href="#"><span><i class="fa-brands fa-x-twitter"></i> </span></a>
+                </div>
+            </div>
+            <div class="section-three">
+                <div class="main-txt-footer">
+                    <h3>Contact</h3>
+                </div>
+                <div class="Contact">
+                    <p>
+                        <span><i class="fa-solid fa-phone"></i></span> <span><a href="tel:+20123456789">+20123456789</a></span>
+                    </p>    
+                    <p>
+                        <span><i class="fa-solid fa-envelope"></i></span> <span><a href="mailto:spa_luxury@example.com">spa_luxury@example.com</a></span>
+                    </p>    
+                    <p>
+                        <span><i class="fa-solid fa-location-dot"></i></span><span> <a href="#">8St-Test, Cairo,Egypt</a></span>
+                    </p>  
+                </div>
+            </div>
+            <div class="section-four">
+                <div class="main-txt-footer">
+                    <h3>Opening Hours : </h3>
+                </div>
+                <table>
+                    <tr>
+                        <td><p>Saturday-Wednesday:</p></td>
+                        <td><p>10:00 AM - 20:00 PM</p></td>
+                    </tr>
+                    <tr>
+                        <td><p>Thursday:</p></td>
+                        <td><p>8:00 AM - 19:00 PM</p></td>
+                    </tr>
+                    <tr>
+                        <td><p>Friday:</p></td>
+                        <td><p>Closed</p></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </footer>
+    
+    <div id="custom-alert-overlay">
+        <div id="custom-alert">
+            <p id="custom-alert-message"></p>
+            <button id="Button custom-alert-close">OK</button>
+        </div>
+    </div>
+
+    <script src="JS/main.js"></script>
+    
+</body>
+</html>
