@@ -197,6 +197,10 @@
     #packg-next-btn {
         left: -2%;
     }
+
+    .lbl-time,.lbl-date{
+        z-index: 1;
+    }
 }
 
 @media (width<=735px){

@@ -5,7 +5,6 @@ window.addEventListener("load", () => {
 
     loader.classList.add("fade");
     setTimeout(()=> {loader.style.display="none"},400);
-
 });
 
 
