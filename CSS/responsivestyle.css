@@ -200,6 +200,7 @@
 
     .lbl-time,.lbl-date{
         z-index: 1;
+        opacity: 1;
     }
 }
 
