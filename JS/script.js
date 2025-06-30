@@ -1,3 +1,15 @@
+window.addEventListener("load", () => {
+    const loader = document.getElementById("loader");
+    const content = document.getElementById("content");
+    setTimeout( ()=>{},3500);
+
+    loader.classList.add("fade");
+    setTimeout(()=> {loader.style.display="none"},400);
+
+    content.style.display = "block";
+});
+
+
 let btnToUp= document.querySelector('.btn-up');
 
 window.addEventListener('scroll', function() {
