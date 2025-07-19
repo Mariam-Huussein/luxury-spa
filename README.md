@@ -25,7 +25,7 @@ A modern and elegant landing page for a luxury spa, built using **HTML**, **CSS*
 luxury-spa/
 ├── assets/
 │   ├── images/              # All images used in the website
-│   └── videos/              # Booking section background video
+│   └── video/              # Booking section background video
 ├── css/
 │   ├── style.css            # Main styles
 │   └── responsiveStyle.css  # Styles for responsive design
