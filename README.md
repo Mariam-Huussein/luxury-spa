@@ -14,29 +14,28 @@ A modern and elegant landing page for a luxury spa, built using **HTML**, **CSS*
 - CSS/CSS3
 - JavaScript
 
-
 ## How to Use
 1. Clone the repo:
-git clone https://github.com/Mariam-Huussein/luxury-spa.git
-2. Open `index.html` in your browser.
+   ```bash
+   git clone https://github.com/Mariam-Huussein/luxury-spa.git
+2. Open index.html in your browser.
 3. That's it!
 
 ## Folder Structure
 luxury-spa/
 ├── assets/
-│ ├── images/
-│ └── videos/
+│   ├── images/              # All images used in the website
+│   └── videos/              # Booking section background video
 ├── css/
-│   └── style.css
-│   └── responsiveStyle.css
+│   ├── style.css            # Main styles
+│   └── responsiveStyle.css  # Styles for responsive design
 ├── js/
-│   └── script.js
-│   └── create-cards.js
-│   └── card-swippeer.js
-├── index.html
-└── README.md
-
+│   ├── script.js            # Page behavior: loader, navbar, booking form, smooth scroll, mobile menu
+│   ├── create-cards.js      # Dynamically generates service & package cards from data
+│   └── card-swippeer.js     # Custom card slider (infinite loop + hover effects + navigation)
+├── index.html               # Main landing page
+└── README.md                # Project documentation
 
 ## Author
-- **Mariam Huussein**
-- GitHub: [@Mariam-Huussein](https://github.com/Mariam-Huussein)
+Mariam Hussein
+GitHub: @Mariam-Huussein
