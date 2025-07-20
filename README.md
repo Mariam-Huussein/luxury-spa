@@ -20,7 +20,7 @@ A modern and elegant landing page for a luxury spa, built using **HTML**, **CSS*
    git clone https://github.com/Mariam-Huussein/luxury-spa.git
 2. Open index.html in your browser.
 3. That's it!
-
+```
 ## Folder Structure
 luxury-spa/
 ├── assets/
@@ -35,7 +35,8 @@ luxury-spa/
 │   └── card-swippeer.js     # Custom card slider (infinite loop + hover effects + navigation)
 ├── index.html               # Main landing page
 └── README.md                # Project documentation
+```
 
 ## Author
-Mariam Hussein
-GitHub: @Mariam-Huussein
+- **Mariam Hussein**
+- GitHub: [@Mariam-Huussein](https://github.com/Mariam-Huussein)
