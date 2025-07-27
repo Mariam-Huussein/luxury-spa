@@ -1,13 +1,11 @@
-// Handle the loader screen when the page loads
+// Handle page load with fade-out loader animation
 window.addEventListener("load", () => {
     const loader = document.getElementById("loader");
     const content = document.getElementById("content");
-    setTimeout( ()=>{},1000);
-
+    
     loader.classList.add("fade");
     setTimeout(()=> {loader.style.display="none"},400);
 });
-
 
 let btnToUp= document.querySelector('.btn-up');
 
