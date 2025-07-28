@@ -2,6 +2,8 @@
 
 A modern and elegant landing page for a luxury spa, built using **HTML**, **CSS**, and **JavaScript**.
 
+---
+
 ## Features
 - Responsive design (works on mobile, tablet, and desktop)
 - Smooth scroll navigation
@@ -9,10 +11,14 @@ A modern and elegant landing page for a luxury spa, built using **HTML**, **CSS*
 - Clean, modern layout
 - Animations and hover effects
 
+---
+
 ## Technologies Used
 - HTML/HTML5
 - CSS/CSS3
 - JavaScript
+
+---
 
 ## How to Use
 1. Clone the repo:
@@ -36,6 +42,14 @@ luxury-spa/
 ├── index.html               # Main landing page
 └── README.md                # Project documentation
 ```
+
+---
+
+## 🚀 Live Demo
+
+🔗 [View Website](https://mariam-huussein.github.io/luxury-spa/)
+
+---
 
 ## Author
 - **Mariam Hussein**
